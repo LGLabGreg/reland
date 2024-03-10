@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  /* Colors */
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
 
@@ -25,7 +26,8 @@
   --input: 214.3 31.8% 91.4%;
   --ring: 222.2 84% 4.9%;
 
-  --radius: 0.5rem;
+  /* Utils */
+  --radius: 4px;
 
   /* Main nav */
   --mainnav-height: 90px;

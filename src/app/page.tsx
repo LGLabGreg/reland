@@ -1,9 +1,10 @@
 import { Button } from '@/components/button';
+import { Container } from '@/components/container';
 import { Heading } from '@/components/heading';
 
 const Home = () => {
   return (
-    <main className="container mx-auto py-4 flex justify-center items-center flex-col">
+    <Container className="py-4 flex justify-center items-center flex-col">
       <Heading level="h1">Home</Heading>
       <Heading level="h2">Home</Heading>
       <Heading level="h3">Home</Heading>
@@ -11,7 +12,7 @@ const Home = () => {
       <Heading level="h5">Home</Heading>
       <Heading level="h6">Home</Heading>
       <Button>Button</Button>
-    </main>
+    </Container>
   );
 };
 
