@@ -1,17 +1,18 @@
-import { Button } from '@/components/ui/button';
 import { Container } from '@/components/ui/container';
 import { Heading } from '@/components/ui/heading';
 
 const Home = () => {
   return (
-    <Container className="py-4 flex justify-center items-center flex-col">
-      <Heading level="h1">Heading H1</Heading>
-      <Heading level="h2">Heading H2</Heading>
-      <Heading level="h3">Heading H3</Heading>
-      <Heading level="h4">Heading H4</Heading>
-      <Heading level="h5">Heading H5</Heading>
-      <Heading level="h6">Heading H6</Heading>
-      <Button>Button</Button>
+    <Container className="flex justify-center items-center flex-col">
+      <section id="home" className="pt-mainnav">
+        <Heading level="h1">Home</Heading>
+      </section>
+      <section id="about" className="pt-mainnav">
+        <Heading level="h1">About</Heading>
+      </section>
+      <section id="portfolio" className="pt-mainnav">
+        <Heading level="h1">Portfolio</Heading>
+      </section>
     </Container>
   );
 };

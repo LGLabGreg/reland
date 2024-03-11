@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        DEFAULT: 'var(--radius)',
+      },
       container: {
         center: true,
         screens: {
@@ -41,14 +44,14 @@ const config: Config = {
           foreground: 'hsl(var(--accent-foreground))',
         },
       },
-      borderRadius: {
-        DEFAULT: 'var(--radius)',
-      },
       height: {
         mainnav: 'var(--mainnav-height)',
       },
+      spacing: {
+        mainnav: 'calc(var(--mainnav-height) + 20px)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
 export default config;
