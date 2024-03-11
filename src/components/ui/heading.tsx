@@ -4,7 +4,7 @@ import { cva } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 import { ComponentPropsWithRef, forwardRef } from 'react';
 
-const headingVariants = cva(' font-bold dark:text-white', {
+const headingVariants = cva(' font-medium dark:text-white', {
   variants: {
     level: {
       h1: 'text-5xl',

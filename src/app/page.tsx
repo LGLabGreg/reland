@@ -1,16 +1,16 @@
-import { Button } from '@/components/button';
-import { Container } from '@/components/container';
-import { Heading } from '@/components/heading';
+import { Button } from '@/components/ui/button';
+import { Container } from '@/components/ui/container';
+import { Heading } from '@/components/ui/heading';
 
 const Home = () => {
   return (
     <Container className="py-4 flex justify-center items-center flex-col">
-      <Heading level="h1">Home</Heading>
-      <Heading level="h2">Home</Heading>
-      <Heading level="h3">Home</Heading>
-      <Heading level="h4">Home</Heading>
-      <Heading level="h5">Home</Heading>
-      <Heading level="h6">Home</Heading>
+      <Heading level="h1">Heading H1</Heading>
+      <Heading level="h2">Heading H2</Heading>
+      <Heading level="h3">Heading H3</Heading>
+      <Heading level="h4">Heading H4</Heading>
+      <Heading level="h5">Heading H5</Heading>
+      <Heading level="h6">Heading H6</Heading>
       <Button>Button</Button>
     </Container>
   );
