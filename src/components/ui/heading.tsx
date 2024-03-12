@@ -4,15 +4,15 @@ import { cva } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 import { ComponentPropsWithRef, forwardRef } from 'react';
 
-const headingVariants = cva(' font-medium dark:text-white', {
+const headingVariants = cva('font-medium dark:text-white', {
   variants: {
     level: {
-      h1: 'text-5xl',
-      h2: 'text-4xl',
-      h3: 'text-3xl',
-      h4: 'text-2xl',
-      h5: 'text-xl',
-      h6: 'text-lg',
+      h1: 'text-5xl leading-tight',
+      h2: 'text-4xl leading-tight',
+      h3: 'text-3xl leading-tight',
+      h4: 'text-2xl leading-tight',
+      h5: 'text-xl leading-tight',
+      h6: 'text-lg leading-tight',
     },
   },
   defaultVariants: {
