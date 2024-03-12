@@ -48,7 +48,7 @@ const config: Config = {
         mainnav: 'var(--mainnav-height)',
       },
       spacing: {
-        mainnav: 'calc(var(--mainnav-height) + 20px)',
+        mainnav: 'var(--mainnav-height)',
       },
     },
   },

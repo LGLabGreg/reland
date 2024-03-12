@@ -8,13 +8,13 @@ import { Button } from '@/components/ui/button';
 import { navigation } from '@/lib/config';
 
 import logo from '@/assets/logo.png';
-import MobileMenu from './mobile-menu';
+import MobileNav from './mobile-nav';
 
 const MainHeader = () => {
   return (
     <Navbar className="fixed inset-0 w-full bg-white border-b" el={'header'}>
       <NavbarLeft>
-        <MobileMenu />
+        <MobileNav />
         <Link href="/">
           <Image src={logo} height={30} alt="logo" />
         </Link>
@@ -33,9 +33,7 @@ const MainHeader = () => {
         </ul>
       </NavbarCenter>
       <NavbarRight>
-        <Button size={'icon'} variant={'ghost'}>
-          <ShoppingCart />
-        </Button>
+        <Button>Buy Now</Button>
       </NavbarRight>
     </Navbar>
   );

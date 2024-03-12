@@ -6,8 +6,8 @@ import MainHeader from '@/components/main-header';
 const sora = Sora({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Next.js Wordpress App',
-  description: 'Next.js Wordpress App',
+  title: 'Next.js Tailwind',
+  description: 'Next.js Tailwind',
 };
 
 export default function RootLayout({
