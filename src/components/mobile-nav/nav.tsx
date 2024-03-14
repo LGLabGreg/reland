@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { Dispatch, SetStateAction, useEffect } from 'react';
 import { useAnimate, usePresence } from 'framer-motion';
 
 import Link from 'next/link';
@@ -9,9 +9,10 @@ import { navigation } from '@/lib/config';
 
 type NavProps = {
   id: string;
+  setOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const Nav = ({ id }: NavProps) => {
+const Nav = ({ id, setOpen }: NavProps) => {
   const [isPresent, safeToRemove] = usePresence();
   const [scope, animate] = useAnimate();
 
@@ -43,6 +44,7 @@ const Nav = ({ id }: NavProps) => {
             <li key={item.label}>
               <Link
                 href={item.href}
+                onClick={() => setOpen(false)}
                 className="block px-[20px] py-[20px] border-b font-medium text-lg"
               >
                 {item.label}

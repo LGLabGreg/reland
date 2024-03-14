@@ -1,24 +1,30 @@
 import { Container } from '@/components/ui/container';
 import { Heading } from '@/components/ui/heading';
 
-import image from '@/assets/hero/1.jpg';
-import Image from 'next/image';
-import { TextStyle } from '@/components/ui/text-style';
+import bgImage from '@/assets/hero/section-bg-1.jpg';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-[120px] bg-rose-50">
-      <Container className="flex">
-        <div className="flex flex-1 justify-center items-center px-5 py-5">
-          <Heading level="h1">
-            Manage your <TextStyle>product and team</TextStyle>
-            <br />
-            in one app
-          </Heading>
-        </div>
-        <div className="flex flex-1 justify-center items-center px-5 py-5">
-          <Image src={image} alt="" height={300} className="rounded-3xl" />
-        </div>
+    <section
+      id="home"
+      className="pt-36 pb-24 before:content[' '] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-white before:bg-opacity-90"
+      style={{
+        background: `url(${bgImage.src})`,
+        backgroundPosition: '50% 0px',
+        backgroundSize: 'cover',
+        width: '100%',
+        height: '100%',
+      }}
+    >
+      <Container className="relative flex flex-col justify-center items-center">
+        <Heading level="h1" className="text-8xl text-center mb-8">
+          React United States Map
+        </Heading>
+        <Button asChild>
+          <Link href="#demo">View demo</Link>
+        </Button>
       </Container>
     </section>
   );

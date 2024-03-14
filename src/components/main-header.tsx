@@ -18,7 +18,7 @@ const MainHeader = () => {
   const [activeSectionId] = useSectionObserver();
 
   return (
-    <Navbar className="fixed inset-0 w-full" el={'header'}>
+    <Navbar className="fixed inset-0 w-full z-50" el={'header'}>
       <Container className="flex">
         <NavbarLeft>
           <MobileNav />

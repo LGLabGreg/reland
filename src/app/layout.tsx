@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Sora } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import './globals.scss';
 import MainHeader from '@/components/main-header';
 
-const sora = Sora({ subsets: ['latin'] });
+const font = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Next.js Tailwind',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sora.className}>
+      <body className={font.className}>
         <MainHeader />
         {children}
       </body>
