@@ -50,6 +50,9 @@ const config: Config = {
       spacing: {
         mainnav: 'var(--mainnav-height)',
       },
+      transitionDuration: {
+        DEFAULT: '300ms',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

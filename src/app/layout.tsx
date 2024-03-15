@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 import { DM_Sans } from 'next/font/google';
 import './globals.scss';
 import MainHeader from '@/components/main-header';
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={font.className}>
         <MainHeader />
         {children}
+        <Analytics />
       </body>
     </html>
   );
