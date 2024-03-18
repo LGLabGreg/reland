@@ -35,7 +35,6 @@ const Tabs: FC<TabsProps> = ({
       >
         {tabs.map((tab) => (
           <Button
-            variant={selectedTab === tab.index ? 'tabactive' : 'tab'}
             onClick={() => onClick(tab.index)}
             key={tab.index}
             role="tab"
@@ -43,6 +42,7 @@ const Tabs: FC<TabsProps> = ({
             aria-controls={`tabpanel-${uuid}-${tab.index}`}
             tabIndex={selectedTab === tab.index ? 0 : -1}
             id={`btn-${uuid}-${tab.index}`}
+            data-active={selectedTab === tab.index}
           >
             {tab.label}
           </Button>

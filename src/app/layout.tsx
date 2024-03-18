@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
-import { DM_Sans } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import './globals.scss';
 import MainHeader from '@/components/main-header';
 
-const font = DM_Sans({ subsets: ['latin'] });
+const font = Urbanist({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Next.js Tailwind',

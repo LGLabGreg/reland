@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -9,46 +10,34 @@ const config: Config = {
   theme: {
     extend: {
       borderRadius: {
-        DEFAULT: 'var(--radius)',
+        DEFAULT: '8px',
       },
       container: {
         center: true,
         screens: {
-          '2xl': '1400px',
+          '2xl': '1320px',
         },
       },
       colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        border: colors.neutral[200],
+        input: colors.neutral[200],
+        ring: colors.neutral[800],
+        background: colors.white,
+        foreground: colors.neutral[800],
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: colors.emerald[700],
+          foreground: colors.white,
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
         },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
-        },
       },
       height: {
-        mainnav: 'var(--mainnav-height)',
+        mainnav: '90px',
       },
       spacing: {
-        mainnav: 'var(--mainnav-height)',
+        mainnav: '90px',
       },
       transitionDuration: {
         DEFAULT: '300ms',

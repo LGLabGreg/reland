@@ -37,7 +37,7 @@ const MainHeader = () => {
             {navigation.map((item) => {
               return (
                 <li key={item.label}>
-                  <Button variant={activeSectionId === item.href ? 'active' : 'ghost'} asChild>
+                  <Button variant={'mainmenu'} data-active={activeSectionId === item.href} asChild>
                     <Link href={item.href}>{item.label}</Link>
                   </Button>
                 </li>
@@ -46,13 +46,7 @@ const MainHeader = () => {
           </ul>
         </NavbarCenter>
         <NavbarRight>
-          <Button className="mr-1" variant={'link'}>
-            Login
-          </Button>
-          <Button className="mr-[10px]">Register</Button>
-          <Button size={'icon'} variant={'outline'}>
-            <ShoppingCart />
-          </Button>
+          <Button>Join Now</Button>
         </NavbarRight>
       </Container>
     </Navbar>

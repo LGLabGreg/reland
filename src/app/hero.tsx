@@ -1,30 +1,47 @@
 import { Container } from '@/components/ui/container';
 import { Heading } from '@/components/ui/heading';
+import { Paragraph } from '@/components/ui/paragraph';
 
-import bgImage from '@/assets/hero/section-bg-1.jpg';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
+import hero from '@/assets/hero/hero.png';
+import Image from 'next/image';
+import TypeAnimation from '@/components/ui/type-animation';
+
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="pt-36 pb-24 before:content[' '] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-white before:bg-opacity-90"
-      style={{
-        background: `url(${bgImage.src})`,
-        backgroundPosition: '50% 0px',
-        backgroundSize: 'cover',
-        width: '100%',
-        height: '100%',
-      }}
-    >
-      <Container className="relative flex flex-col justify-center items-center">
-        <Heading level="h1" className="text-8xl text-center mb-8">
-          React United States Map
-        </Heading>
-        <Button asChild>
-          <Link href="#demo">View demo</Link>
-        </Button>
+    <section id="home" className="pt-36 pb-24">
+      <Container className="flex">
+        <div className="w-1/2">
+          <Heading level="h1">
+            Courses with
+            <br />
+            the <span className="text-primary underline">Best Mentors</span>.
+            <br />
+            Learn{' '}
+            <TypeAnimation
+              sequence={['Anything', 3000, 'Anywhere', 3000]}
+              speed={50}
+              repeat={Infinity}
+            />
+          </Heading>
+          <Paragraph variant="lg" className="text-neutral-800/80">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque asperiores nobis cumque
+            esse doloremque, aspernatur possimus sed provident deserunt voluptatibus aliquam ipsa
+            autem dicta a aperiam eos quis id temporibus!
+          </Paragraph>
+
+          <Button size="lg" className="mr-2" asChild>
+            <Link href="#explore">Explore courses</Link>
+          </Button>
+          <Button variant="ghost" size="lg" asChild>
+            <Link href="#become-mentor">become a mentor</Link>
+          </Button>
+        </div>
+        <div className="">
+          <Image src={hero} alt="hero" />
+        </div>
       </Container>
     </section>
   );
