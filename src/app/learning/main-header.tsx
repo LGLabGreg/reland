@@ -12,8 +12,6 @@ import { useScrollProps, useSectionObserver } from '@/lib/hooks';
 import MobileNav from './mobile-nav';
 import { navigation } from './config';
 
-import logo from '@/assets/logo.png';
-
 const MainHeader = () => {
   const activeSectionId = useSectionObserver(navigation);
   const scrollProps = useScrollProps();
@@ -29,7 +27,7 @@ const MainHeader = () => {
         <NavbarLeft>
           <MobileNav />
           <Link href="/">
-            <Image src={logo} height={30} alt="logo" />
+            <img src="/images/logo.png" alt="logo" className="h-[30px]" />
           </Link>
         </NavbarLeft>
         <NavbarCenter className="hidden lg:flex">

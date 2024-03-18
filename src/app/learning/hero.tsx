@@ -7,13 +7,11 @@ import { Paragraph } from '@/components/ui/paragraph';
 import { Button } from '@/components/ui/button';
 import TypeAnimation from '@/components/ui/type-animation';
 
-import hero from '@/assets/hero/hero.png';
-
 const Hero = () => {
   return (
     <section id="home" className="pt-36 pb-24">
       <Container className="flex">
-        <div className="w-1/2">
+        <div className="w-1/2 flex flex-col justify-center">
           <Heading level="h1">
             Courses with
             <br />
@@ -31,16 +29,17 @@ const Hero = () => {
             esse doloremque, aspernatur possimus sed provident deserunt voluptatibus aliquam ipsa
             autem dicta a aperiam eos quis id temporibus!
           </Paragraph>
-
-          <Button size="lg" className="mr-2" asChild>
-            <Link href="#explore">Explore courses</Link>
-          </Button>
-          <Button variant="ghost" size="lg" asChild>
-            <Link href="#become-mentor">become a mentor</Link>
-          </Button>
+          <div className="flex">
+            <Button size="lg" className="mr-2" asChild>
+              <Link href="#explore">Explore courses</Link>
+            </Button>
+            <Button variant="ghost" size="lg" asChild>
+              <Link href="#become-mentor">become a mentor</Link>
+            </Button>
+          </div>
         </div>
-        <div className="">
-          <Image src={hero} alt="hero" />
+        <div className="w-1/2 flex flex-col justify-center items-center">
+          <img src="images/learning/hero.png" alt="hero" />
         </div>
       </Container>
     </section>
