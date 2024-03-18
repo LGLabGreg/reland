@@ -1,4 +1,4 @@
-import Hero from '@/app/hero';
+import Hero from './hero';
 import Footer from './footer';
 
 const Page = () => {

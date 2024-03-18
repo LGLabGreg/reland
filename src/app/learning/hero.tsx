@@ -1,13 +1,13 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 import { Container } from '@/components/ui/container';
 import { Heading } from '@/components/ui/heading';
 import { Paragraph } from '@/components/ui/paragraph';
-
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import TypeAnimation from '@/components/ui/type-animation';
 
 import hero from '@/assets/hero/hero.png';
-import Image from 'next/image';
-import TypeAnimation from '@/components/ui/type-animation';
 
 const Hero = () => {
   return (

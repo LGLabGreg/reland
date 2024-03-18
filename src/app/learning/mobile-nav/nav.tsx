@@ -1,11 +1,10 @@
 'use client';
+import Link from 'next/link';
 
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import { useAnimate, usePresence } from 'framer-motion';
 
-import Link from 'next/link';
-
-import { navigation } from '@/lib/config';
+import { navigation } from '../config';
 
 type NavProps = {
   id: string;

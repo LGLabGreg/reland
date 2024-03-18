@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Urbanist } from 'next/font/google';
 import './globals.scss';
-import MainHeader from '@/components/main-header';
+import MainHeader from './main-header';
 
 const font = Urbanist({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <MainHeader />
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

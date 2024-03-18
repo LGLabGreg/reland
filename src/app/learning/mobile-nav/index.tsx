@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useId, useState } from 'react';
+import { useId, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
 import Nav from './nav';

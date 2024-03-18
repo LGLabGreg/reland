@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+import { type NavigationProps } from './types';
 
-import { navigation } from './config';
-
-const useSectionObserver = (): string | null => {
+const useSectionObserver = (navigation: NavigationProps[]): string | null => {
   const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
   const observer = useRef<IntersectionObserver | null>(null);
 

@@ -2,11 +2,7 @@ import type { Config } from 'tailwindcss';
 import colors from 'tailwindcss/colors';
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       borderRadius: {
@@ -25,12 +21,8 @@ const config: Config = {
         background: colors.white,
         foreground: colors.neutral[800],
         primary: {
-          DEFAULT: colors.emerald[700],
+          DEFAULT: 'hsl(var(--primary))',
           foreground: colors.white,
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
         },
       },
       height: {

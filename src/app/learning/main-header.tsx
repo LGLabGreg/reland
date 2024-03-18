@@ -2,20 +2,20 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShoppingCart } from 'lucide-react';
 
+import { Container } from '@/components/ui/container';
 import { Navbar, NavbarCenter, NavbarLeft, NavbarRight } from '@/components/ui/navbar';
 import { Button } from '@/components/ui/button';
-import MobileNav from './mobile-nav';
 
-import { navigation } from '@/lib/config';
 import { useScrollProps, useSectionObserver } from '@/lib/hooks';
 
+import MobileNav from './mobile-nav';
+import { navigation } from './config';
+
 import logo from '@/assets/logo.png';
-import { Container } from './ui/container';
 
 const MainHeader = () => {
-  const activeSectionId = useSectionObserver();
+  const activeSectionId = useSectionObserver(navigation);
   const scrollProps = useScrollProps();
 
   return (

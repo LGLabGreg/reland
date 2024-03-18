@@ -6,6 +6,10 @@
   scroll-behavior: smooth
 }
 
+:root {
+  --primary: 174 58% 30%
+}
+
 @layer base {
   * {
     @apply border-border;
