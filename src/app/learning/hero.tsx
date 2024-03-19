@@ -1,5 +1,7 @@
+'use client';
+
 import Link from 'next/link';
-import Image from 'next/image';
+import { ScrollParallax, MouseParallax } from 'react-just-parallax';
 
 import { Container } from '@/components/ui/container';
 import { Heading } from '@/components/ui/heading';
@@ -10,19 +12,19 @@ import TypeAnimation from '@/components/ui/type-animation';
 const Hero = () => {
   return (
     <section id="home" className="pt-36 pb-24">
-      <Container className="flex">
-        <div className="w-1/2 flex flex-col justify-center">
+      <Container className="md:flex">
+        <div className="md:w-3/5 flex flex-col justify-center">
           <Heading level="h1">
-            Courses with
-            <br />
-            the <span className="text-primary underline">Best Mentors</span>.
-            <br />
             Learn{' '}
             <TypeAnimation
-              sequence={['Anything', 3000, 'Anywhere', 3000]}
+              sequence={['Anything.', 3000, 'Anywhere.', 3000]}
               speed={50}
               repeat={Infinity}
             />
+            <br />
+            Courses with
+            <br />
+            the <span className="text-primary underline">Best Mentors</span>
           </Heading>
           <Paragraph variant="lg" className="text-neutral-800/80">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque asperiores nobis cumque
@@ -38,7 +40,26 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="w-1/2 flex flex-col justify-center items-center">
+        <div className="relative md:w-2/5 flex flex-col justify-center items-center px-5 py-5">
+          <ScrollParallax isAbsolutelyPositioned>
+            <img
+              src="/images/learning/hero-teacher.png"
+              className="w-56 absolute -left-[3.5rem] top-[3.5rem] drop-shadow-xl"
+            />
+          </ScrollParallax>
+          <ScrollParallax isAbsolutelyPositioned>
+            <img
+              src="/images/learning/hero-learning.png"
+              className="w-12 absolute right-[1rem] top-[3.5rem] drop-shadow-xl"
+            />
+          </ScrollParallax>
+          <ScrollParallax isAbsolutelyPositioned>
+            <img
+              src="/images/learning/hero-daily-task.png"
+              className="w-72 absolute right-[2rem] bottom-[3.5rem] drop-shadow-xl"
+            />
+          </ScrollParallax>
+
           <img src="images/learning/hero.png" alt="hero" />
         </div>
       </Container>

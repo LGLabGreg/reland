@@ -17,7 +17,7 @@ export const MenuToggle = ({ onToggle, open }: MenuToggleProps) => (
     onClick={onToggle}
     className="flex mt-[4px]"
   >
-    <svg width="30" height="30" viewBox="0 0 23 23" className="stroke-primary">
+    <svg width="30" height="30" viewBox="0 0 23 23" className="stroke-foreground">
       <Path
         variants={{
           closed: { d: 'M 2 2.5 L 20 2.5' },
