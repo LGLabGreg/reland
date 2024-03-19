@@ -11,9 +11,9 @@ import TypeAnimation from '@/components/ui/type-animation';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-36 pb-24">
+    <section id="home" className="pt-28 pb-20 md:pt-36 md:pb-24">
       <Container className="md:flex">
-        <div className="md:w-3/5 flex flex-col justify-center">
+        <div className="md:w-3/5 flex flex-col justify-center mb-10 md:mb-0">
           <Heading level="h1">
             Learn{' '}
             <TypeAnimation
