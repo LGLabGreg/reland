@@ -17,7 +17,7 @@ const Hero = () => {
           <Heading level="h1">
             Learn{' '}
             <TypeAnimation
-              sequence={['Anything.', 3000, 'Anywhere.', 3000]}
+              sequence={['Anything', 3000, 'Anywhere', 3000]}
               speed={50}
               repeat={Infinity}
             />
@@ -45,18 +45,21 @@ const Hero = () => {
             <img
               src="/images/learning/hero-teacher.png"
               className="w-56 absolute -left-[3.5rem] top-[3.5rem] drop-shadow-xl"
+              alt=""
             />
           </ScrollParallax>
           <ScrollParallax isAbsolutelyPositioned>
             <img
               src="/images/learning/hero-learning.png"
               className="w-12 absolute right-[1rem] top-[3.5rem] drop-shadow-xl"
+              alt=""
             />
           </ScrollParallax>
           <ScrollParallax isAbsolutelyPositioned>
             <img
               src="/images/learning/hero-daily-task.png"
               className="w-72 absolute right-[2rem] bottom-[3.5rem] drop-shadow-xl"
+              alt=""
             />
           </ScrollParallax>
 
