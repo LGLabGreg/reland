@@ -15,14 +15,18 @@ const config: Config = {
         },
       },
       colors: {
-        border: colors.neutral[200],
-        input: colors.neutral[200],
-        ring: colors.neutral[800],
+        border: colors.zinc[200],
+        input: colors.zinc[200],
+        ring: colors.zinc[800],
         background: colors.white,
-        foreground: colors.neutral[800],
+        foreground: colors.zinc[800],
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: colors.white,
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: colors.zinc[800],
         },
       },
       height: {

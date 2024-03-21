@@ -14,7 +14,7 @@ const Features = () => {
       <Container>
         <ul className="grid grid-rows-4 sm:grid-rows-2 md:grid-rows-1 grid-flow-col gap-8 gap-x-8 gap-y-8 items-center">
           {features.map(({ title, description }: FeaturesProps) => (
-            <li className="flex flex-col items-center">
+            <li className="flex flex-col items-center" key={title}>
               {title && (
                 <Heading level="h4" className="mb-0">
                   {title}

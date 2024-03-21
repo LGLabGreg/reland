@@ -2,6 +2,7 @@ import Hero from './hero';
 import Footer from './footer';
 import Features from './features';
 import About from './about';
+import Benefits from './benefits';
 
 const Page = () => {
   return (
@@ -9,6 +10,7 @@ const Page = () => {
       <Hero />
       <Features />
       <About />
+      <Benefits />
       <Footer />
     </>
   );

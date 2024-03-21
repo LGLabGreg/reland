@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <Container asChild>
-      <section id="about" className="md:flex py-16 md:py-20">
+    <section id="about" className="py-16 md:py-20">
+      <Container className="md:flex">
         <div className="mb-8 md:mb-0 md:w-1/2">
           <img src="/images/learning/about.jpg" alt="about us" className="rounded" />
         </div>
@@ -23,8 +23,8 @@ const About = () => {
             <Link href="#">About Us</Link>
           </Button>
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 
