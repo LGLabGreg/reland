@@ -15,11 +15,12 @@ const config: Config = {
         },
       },
       colors: {
-        border: colors.zinc[200],
-        input: colors.zinc[200],
-        ring: colors.zinc[800],
+        border: colors.neutral[200],
+        input: colors.neutral[200],
+        ring: colors.neutral[800],
         background: colors.white,
-        foreground: colors.zinc[800],
+        foreground: colors.neutral[800],
+        muted: colors.neutral[600],
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: colors.white,

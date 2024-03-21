@@ -3,6 +3,7 @@ import Footer from './footer';
 import Features from './features';
 import About from './about';
 import Benefits from './benefits';
+import Courses from './courses';
 
 const Page = () => {
   return (
@@ -11,6 +12,7 @@ const Page = () => {
       <Features />
       <About />
       <Benefits />
+      <Courses />
       <Footer />
     </>
   );
