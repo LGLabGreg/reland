@@ -22,7 +22,8 @@ export const benefits = [
   {
     icon: Mic,
     title: 'Live courses 2',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
     icon: Mic,
@@ -132,5 +133,28 @@ export const courses = [
     category: 'Cooking',
     numStudents: 7518,
     length: '1h 07m',
+  },
+];
+
+export const creators = [
+  {
+    image: '/images/learning/creators/1.jpg',
+    title: 'Luna Chen',
+    description: 'Web and Mobile Developer',
+  },
+  {
+    image: '/images/learning/creators/2.jpg',
+    title: 'Sierra Thompson',
+    description: 'Michelin Star Chef',
+  },
+  {
+    image: '/images/learning/creators/3.jpg',
+    title: 'Oliver Smith',
+    description: 'Music Composer',
+  },
+  {
+    image: '/images/learning/creators/4.jpg',
+    title: 'Noah Williams',
+    description: 'Graphic Designer',
   },
 ];

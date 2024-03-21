@@ -6,6 +6,12 @@
   scroll-behavior: smooth
 }
 
+.pseudo-image-hover {
+  &::before {
+    background-image: inherit;
+  }
+}
+
 :root {
   --primary: 174 58% 30%;
   --secondary: 180 32% 93%;

@@ -4,6 +4,7 @@ import Features from './features';
 import About from './about';
 import Benefits from './benefits';
 import Courses from './courses';
+import Creators from './creators';
 
 const Page = () => {
   return (
@@ -13,6 +14,7 @@ const Page = () => {
       <About />
       <Benefits />
       <Courses />
+      <Creators />
       <Footer />
     </>
   );
