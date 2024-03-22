@@ -5,6 +5,7 @@ import About from './about';
 import Benefits from './benefits';
 import Courses from './courses';
 import Creators from './creators';
+import Testimonials from './testimonials';
 
 const Page = () => {
   return (
@@ -15,6 +16,7 @@ const Page = () => {
       <Benefits />
       <Courses />
       <Creators />
+      <Testimonials />
       <Footer />
     </>
   );

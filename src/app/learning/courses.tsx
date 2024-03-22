@@ -94,7 +94,7 @@ const Courses = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="flex flex-col rounded shadow overflow-hidden bg-white"
+                  className="flex flex-col rounded drop-shadow overflow-hidden bg-white"
                 >
                   <div className="flex items-center justify-center h-[164px] overflow-hidden">
                     <img src={image} alt={title} />

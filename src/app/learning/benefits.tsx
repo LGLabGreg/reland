@@ -33,7 +33,7 @@ const Benefits = () => {
         <div className="md:w-3/5 grid sm:grid-cols-2 gap-5 md:pl-16">
           {benefits.map(({ icon: Icon, title, description }: BenefitsProps) => (
             <div
-              className="border-2 border-primary rounded px-6 py-6 hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="border border-primary shadow rounded px-6 py-6 hover:bg-primary hover:text-primary-foreground transition-colors"
               key={title}
             >
               <div className="flex items-center mb-4">

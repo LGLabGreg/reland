@@ -158,3 +158,69 @@ export const creators = [
     description: 'Graphic Designer',
   },
 ];
+
+export const testimonials = [
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Sarah Johnson',
+    stars: 5,
+    comment:
+      "I've tried multiple online learning platforms, but none have been as comprehensive and engaging as this one. The courses are well-structured, and the instructors are top-notch. Highly recommend!",
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Alex Smith',
+    stars: 4.3,
+    comment:
+      'Fantastic resource for expanding your skill set! The variety of courses available is impressive, and the interactive lessons make learning enjoyable. Definitely worth the investment.',
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Emily Chen',
+    stars: 4.7,
+    comment:
+      "I've been using this platform to supplement my studies, and it has exceeded my expectations. The content is relevant and up-to-date, and the quizzes help reinforce learning. I feel more confident in my abilities after each course.",
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'David Martinez',
+    stars: 4,
+    comment:
+      "Great platform for both beginners and advanced learners. The courses cater to all levels of expertise, and the community forums provide additional support and insights. I've already recommended it to several friends!",
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Jennifer Lee',
+    stars: 2.6,
+    comment:
+      "I've been able to enhance my professional skills significantly thanks to this website. The courses are easy to follow, and the certificates add value to my resume. I've landed new opportunities because of the knowledge gained here.",
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Michael Brown',
+    stars: 4.6,
+    comment:
+      'As a busy professional, flexibility is crucial for me. This platform offers that and more. I can access courses anytime, anywhere, and the mobile app is incredibly convenient. Truly a game-changer!',
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Lisa Thompson',
+    stars: 5,
+    comment:
+      "I'm impressed by the caliber of instructors on this platform. They are experts in their fields and deliver content in a way that's engaging and easy to understand. I've learned so much and look forward to continuing my education here.",
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Jason Nguyen',
+    stars: 4,
+    comment:
+      'The user interface is intuitive, making navigation seamless. I appreciate the progress tracking feature, which helps me stay motivated to complete courses. Highly recommended for anyone looking to upskill!',
+  },
+  {
+    image: '/images/learning/creators/1.jpg',
+    name: 'Amanda Wilson',
+    stars: 5,
+    comment:
+      "I've been using this platform to explore new interests outside of my professional field, and it's been a rewarding experience. The variety of courses ensures there's always something intriguing to learn. I've discovered passions I never knew I had!",
+  },
+];

@@ -34,7 +34,7 @@ const Creators = () => {
           {creators.map(({ image, title, description }: CreatorsProps) => (
             <div
               style={{ backgroundImage: `url(${image})` }}
-              className="relative overflow-hidden rounded bg-cover bg-center h-[240px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:bg-inherit before:bg-cover before:origin-center before:transition-transform hover:before:scale-110 pseudo-image-hover"
+              className="relative overflow-hidden rounded bg-cover bg-center h-[240px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:bg-inherit before:bg-cover before:origin-center before:transition-transform hover:before:scale-110 pseudo-image-hover drop-shadow"
               key={title}
             >
               <div className="absolute bottom-0 rounded-b w-full px-3 py-3 text-white bg-gradient-to-t from-black">
