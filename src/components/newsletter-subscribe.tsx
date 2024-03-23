@@ -47,14 +47,17 @@ const NewsletterSubscribe = () => {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Subscribe to get latest offers</FormLabel>
-              <FormControl>
-                <Input type="email" placeholder="Email" {...field} />
-              </FormControl>
+              <div className="flex w-full max-w-sm items-center space-x-2">
+                <FormControl>
+                  <Input type="email" placeholder="Email" {...field} />
+                </FormControl>
+                <Button type="submit">Subscribe</Button>
+              </div>
+
               <FormMessage>{message}</FormMessage>
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
       </form>
     </Form>
   );
