@@ -20,6 +20,8 @@ const config: Config = {
         ring: colors.neutral[800],
         background: colors.white,
         foreground: colors.neutral[800],
+        'dark-background': colors.neutral[800],
+        'dark-foreground': colors.neutral[100],
         muted: colors.neutral[600],
         primary: {
           DEFAULT: 'hsl(var(--primary))',
