@@ -24,13 +24,13 @@ const useSectionObserver = (navigation: NavigationProps[]): string | null => {
     return () => {
       observer.current!.disconnect();
     };
-  }, []);
+  }, [navigation]);
 
   return activeSectionId;
 };
 
 const useScrollProps = () => {
-  const [scrollProps, setScrollProps] = useState({ direction: 'up', position: 0 });
+  const [scrollProps, setScrollProps] = useState({ direction: 'up', position: window.scrollY });
 
   useEffect(() => {
     const threshold = 0;
