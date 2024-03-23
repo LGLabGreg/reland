@@ -30,7 +30,13 @@ const useSectionObserver = (navigation: NavigationProps[]): string | null => {
 };
 
 const useScrollProps = () => {
-  const [scrollProps, setScrollProps] = useState({ direction: 'up', position: window.scrollY });
+  const [scrollProps, setScrollProps] = useState({ direction: 'up', position: 0 });
+
+  useEffect(() => {
+    if (window) {
+      setScrollProps({ ...scrollProps, position: window.scrollY });
+    }
+  }, []);
 
   useEffect(() => {
     const threshold = 0;
