@@ -1,16 +1,17 @@
 import NewsletterSubscribe from '@/components/newsletter-subscribe';
 import { Container } from '@/components/ui/container';
 import { Heading } from '@/components/ui/heading';
+import Image from 'next/image';
 import Link from 'next/link';
 
 function Footer() {
   return (
-    <div className="flex flex-col pt-24 pb-6 bg-dark-background text-dark-foreground">
+    <div className="flex flex-col pt-12 md:pt-24 pb-6 bg-dark-background text-dark-foreground">
       <Container className="flex flex-col">
         <div className="flex flex-col md:flex-row gap-6 justify-between mb-6 md:mb-24">
           <div className="flex flex-col md:w-1/4 lg:w-1/3 mb-4 md:mb-0">
             <div className="mb-4">
-              <img loading="lazy" src="/images/logo-white.png" className="w-auto h-[30px]" />
+              <Image src="/images/logo-white.png" alt="logo" width={120} height={0} />
             </div>
             <p>
               At Reland, we are dedicated to providing an innovative and enriching online learning
