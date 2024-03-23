@@ -8,8 +8,8 @@ import MainHeader from './main-header';
 const font = Urbanist({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Next.js Tailwind',
-  description: 'Next.js Tailwind',
+  title: 'Reland',
+  description: 'Next.js Tailwind Landing Page template',
 };
 
 export default function RootLayout({

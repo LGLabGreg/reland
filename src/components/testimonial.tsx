@@ -9,7 +9,6 @@ type TestimonialsProps = {
 
 const Stars = ({ stars }: { stars: number }) => {
   const floor = Math.floor(stars);
-  const ceil = Math.ceil(stars);
 
   return (
     <div className="flex gap-1">
@@ -26,7 +25,7 @@ const Stars = ({ stars }: { stars: number }) => {
 const Testimonial = ({ image, name, stars, comment }: TestimonialsProps) => {
   return (
     <div className="p-1">
-      <div className="py-5 px-5 rounded border border-primary drop-shadow bg-white">
+      <div className="py-5 px-5 rounded border drop-shadow-sm bg-white">
         <div className="flex items-center mb-3">
           <div
             className="w-12 h-12 rounded-full bg-cover bg-center mr-3"

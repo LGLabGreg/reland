@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Container } from '@/components/ui/container';
+import { Section } from '@/components/ui/section';
 import { Paragraph } from '@/components/ui/paragraph';
 
 import { Heading } from '@/components/ui/heading';
@@ -7,10 +8,10 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 md:py-20">
+    <Section id="about">
       <Container className="md:flex">
         <div className="mb-8 md:mb-0 md:w-1/2">
-          <img src="/images/learning/about.jpg" alt="about us" className="rounded" />
+          <img src="/images/learning/about/about.jpg" alt="about us" className="rounded" />
         </div>
         <div className="md:w-1/2 md:px-8 lg:px-16 flex flex-col justify-center">
           <div className="text-primary mb-1 uppercase font-semibold">About us</div>
@@ -24,7 +25,7 @@ const About = () => {
           </Button>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

@@ -22,14 +22,11 @@ const config: Config = {
         foreground: colors.neutral[800],
         'dark-background': colors.neutral[800],
         'dark-foreground': colors.neutral[100],
+        'grey-background': colors.neutral[100],
         muted: colors.neutral[600],
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: colors.white,
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: colors.zinc[800],
         },
       },
       height: {

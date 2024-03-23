@@ -1,9 +1,10 @@
 'use client';
 
 import { Container } from '@/components/ui/container';
+import { Section } from '@/components/ui/section';
 import { Heading } from '@/components/ui/heading';
 import { Paragraph } from '@/components/ui/paragraph';
-import Testimonial from '@/components/ui/testimonial';
+import Testimonial from '@/components/testimonial';
 
 import {
   Carousel,
@@ -17,7 +18,7 @@ import { testimonials } from './config';
 
 const Courses = () => {
   return (
-    <section id="courses" className="py-16 md:py-20">
+    <Section id="testimonials">
       <Container>
         <div className="w-2/3 mx-auto flex flex-col justify-center items-center text-center mb-6">
           <div className="text-primary mb-1 uppercase font-semibold">Testimonials</div>
@@ -49,7 +50,7 @@ const Courses = () => {
           </Carousel>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

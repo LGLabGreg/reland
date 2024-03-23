@@ -31,7 +31,7 @@ const MainHeader = () => {
           </Link>
         </NavbarLeft>
         <NavbarCenter className="hidden lg:flex">
-          <ul className="flex gap-[20px]">
+          <ul className="flex gap-2">
             {navigation.map((item) => {
               return (
                 <li key={item.label}>

@@ -1,4 +1,5 @@
 import { Container } from '@/components/ui/container';
+import { Section } from '@/components/ui/section';
 import { Heading } from '@/components/ui/heading';
 
 import { features } from './config';
@@ -10,13 +11,13 @@ type FeaturesProps = {
 
 const Features = () => {
   return (
-    <div className="bg-primary text-primary-foreground py-10">
+    <Section id="features" size="small" colour="primary">
       <Container>
         <ul className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 gap-x-8 gap-y-8 items-center">
           {features.map(({ title, description }: FeaturesProps) => (
             <li className="flex flex-col items-center" key={title}>
               {title && (
-                <Heading level="h4" className="mb-1 text-3xl">
+                <Heading level="h4" className="mb-1 lg:text-6xl">
                   {title}
                 </Heading>
               )}
@@ -25,7 +26,7 @@ const Features = () => {
           ))}
         </ul>
       </Container>
-    </div>
+    </Section>
   );
 };
 

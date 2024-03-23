@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <div className="flex flex-col py-10 bg-dark-background text-dark-foreground">
+    <div className="flex flex-col pt-24 pb-6 bg-dark-background text-dark-foreground">
       <Container className="flex flex-col">
-        <div className="flex flex-col md:flex-row gap-6 justify-between mb-6 md:mb-16">
+        <div className="flex flex-col md:flex-row gap-6 justify-between mb-6 md:mb-24">
           <div className="flex flex-col md:w-1/4 lg:w-1/3 mb-4 md:mb-0">
             <div className="mb-4">
               <img loading="lazy" src="/images/logo-white.png" className="w-auto h-[30px]" />

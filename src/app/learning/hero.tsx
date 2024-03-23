@@ -1,17 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import { ScrollParallax, MouseParallax } from 'react-just-parallax';
+import { ScrollParallax } from 'react-just-parallax';
 
 import { Container } from '@/components/ui/container';
 import { Heading } from '@/components/ui/heading';
 import { Paragraph } from '@/components/ui/paragraph';
 import { Button } from '@/components/ui/button';
 import TypeAnimation from '@/components/ui/type-animation';
+import { Section } from '@/components/ui/section';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 pb-20 md:pt-36 md:pb-24">
+    <Section id="home" size="hero">
       <Container className="md:flex">
         <div className="md:w-3/5 flex flex-col justify-center mb-10 md:mb-0">
           <Heading level="h1">
@@ -66,7 +67,7 @@ const Hero = () => {
           <img src="images/learning/hero.png" alt="hero" />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

@@ -1,39 +1,45 @@
-import { Mic } from 'lucide-react';
+import { ChefHat, HandMetal, Handshake, Mic, Wifi } from 'lucide-react';
 
 export const navigation = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Benefits', href: '#benefits' },
+  { label: 'Courses', href: '#courses' },
+  { label: 'Creators', href: '#creators' },
+  { label: 'Testimonials', href: '#testimonials' },
 ];
 
 export const features = [
-  { title: '25K+', description: 'Awesome classes' },
-  { title: '60K+', description: 'Active members' },
+  { title: '25K', description: 'Awesome classes' },
+  { title: '60K', description: 'Active members' },
   { title: '100+', description: 'Certified instructors' },
   { title: '4.8', description: 'Average rating' },
 ];
 
 export const benefits = [
   {
-    icon: Mic,
-    title: 'Live courses 1',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-  },
-  {
-    icon: Mic,
-    title: 'Live courses 2',
+    icon: Wifi,
+    title: 'Flexible Learning',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      'With on-demand courses, live sessions, and self-paced modules, you can learn at your own pace, anytime, anywhere.',
   },
   {
-    icon: Mic,
-    title: 'Live courses 3',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    icon: Handshake,
+    title: 'Community Support',
+    description:
+      'Connect with fellow learners, ask questions, and share your insights in our vibrant online community.',
   },
   {
-    icon: Mic,
-    title: 'Live courses 4',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    icon: HandMetal,
+    title: 'Comprehensive Courses',
+    description:
+      "Whether you're looking to enhance your professional skills or explore a new hobby our extensive course catalog has something for everyone.",
+  },
+  {
+    icon: ChefHat,
+    title: 'Expert Instructors',
+    description:
+      'Our instructors are not only experts in their fields but also passionate educators dedicated to helping you succeed.',
   },
 ];
 
@@ -161,63 +167,63 @@ export const creators = [
 
 export const testimonials = [
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/1.jpg',
     name: 'Sarah Johnson',
     stars: 5,
     comment:
       "I've tried multiple online learning platforms, but none have been as comprehensive and engaging as this one. The courses are well-structured, and the instructors are top-notch. Highly recommend!",
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/2.jpg',
     name: 'Alex Smith',
     stars: 4.3,
     comment:
       'Fantastic resource for expanding your skill set! The variety of courses available is impressive, and the interactive lessons make learning enjoyable. Definitely worth the investment.',
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/3.jpg',
     name: 'Emily Chen',
     stars: 4.7,
     comment:
       "I've been using this platform to supplement my studies, and it has exceeded my expectations. The content is relevant and up-to-date, and the quizzes help reinforce learning. I feel more confident in my abilities after each course.",
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/4.jpg',
     name: 'David Martinez',
     stars: 4,
     comment:
       "Great platform for both beginners and advanced learners. The courses cater to all levels of expertise, and the community forums provide additional support and insights. I've already recommended it to several friends!",
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/5.jpg',
     name: 'Jennifer Lee',
     stars: 2.6,
     comment:
       "I've been able to enhance my professional skills significantly thanks to this website. The courses are easy to follow, and the certificates add value to my resume. I've landed new opportunities because of the knowledge gained here.",
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/6.jpg',
     name: 'Michael Brown',
     stars: 4.6,
     comment:
       'As a busy professional, flexibility is crucial for me. This platform offers that and more. I can access courses anytime, anywhere, and the mobile app is incredibly convenient. Truly a game-changer!',
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/7.jpg',
     name: 'Lisa Thompson',
     stars: 5,
     comment:
       "I'm impressed by the caliber of instructors on this platform. They are experts in their fields and deliver content in a way that's engaging and easy to understand. I've learned so much and look forward to continuing my education here.",
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/8.jpg',
     name: 'Jason Nguyen',
     stars: 4,
     comment:
       'The user interface is intuitive, making navigation seamless. I appreciate the progress tracking feature, which helps me stay motivated to complete courses. Highly recommended for anyone looking to upskill!',
   },
   {
-    image: '/images/learning/creators/1.jpg',
+    image: '/images/learning/testimonials/9.jpg',
     name: 'Amanda Wilson',
     stars: 5,
     comment:
