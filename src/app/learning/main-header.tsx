@@ -27,7 +27,7 @@ const MainHeader = () => {
         <NavbarLeft>
           <MobileNav />
           <Link href="/">
-            <img src="/images/logo.png" alt="logo" className="w-auto h-[30px] max-w-none" />
+            <Image src="/images/logo.png" alt="logo" width={120} height={0} />
           </Link>
         </NavbarLeft>
         <NavbarCenter className="hidden lg:flex">

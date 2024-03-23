@@ -5,13 +5,14 @@ import { Paragraph } from '@/components/ui/paragraph';
 
 import { Heading } from '@/components/ui/heading';
 import Link from 'next/link';
+import Image from '@/components/ui/image';
 
 const About = () => {
   return (
     <Section id="about">
       <Container className="md:flex">
-        <div className="mb-8 md:mb-0 md:w-1/2">
-          <img src="/images/learning/about/about.jpg" alt="about us" className="rounded" />
+        <div className="mb-8 md:mb-0 md:w-1/2 flex flex-col justify-center">
+          <Image src="/images/learning/about/about.jpg" alt="about us" className="rounded" />
         </div>
         <div className="md:w-1/2 md:px-8 lg:px-16 flex flex-col justify-center">
           <div className="text-primary mb-1 uppercase font-semibold">About us</div>
