@@ -2,7 +2,7 @@
 
 This is a landing page template built using Next.js/Typescript/Tailwind with Framer Motion animations.
 
-Cuurently building a E-learning demo http://localhost:3000/learning
+Currently building a E-learning demo http://localhost:3000/learning
 
 ## Getting Started
 
