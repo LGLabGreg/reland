@@ -71,7 +71,7 @@ const Courses = () => {
         </nav>
         <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
           {courses.map((course) => (
-            <Course course={course} filter={filter} />
+            <Course key={course.title} course={course} filter={filter} />
           ))}
         </div>
       </Container>
