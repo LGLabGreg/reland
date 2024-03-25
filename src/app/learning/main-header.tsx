@@ -18,8 +18,8 @@ const MainHeader = () => {
 
   return (
     <Navbar
-      className={`fixed left-0 w-full z-50 border-b border-transparent transition-all ${
-        scrollProps.position > 0 && 'bg-white border-border'
+      className={`fixed left-0 w-full h-mainnav z-50 border-b border-transparent transition-all ${
+        scrollProps.position > 0 && 'bg-white border-border h-mainnavsmall'
       } ${scrollProps.direction === 'up' ? 'top-0' : '-top-mainnav'}`}
       el={'header'}
     >
