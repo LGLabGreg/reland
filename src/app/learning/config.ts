@@ -51,6 +51,8 @@ export const courses = [
     category: 'Development',
     numStudents: 7013,
     length: '1h 18m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/2.jpg',
@@ -59,6 +61,8 @@ export const courses = [
     category: 'Music',
     numStudents: 18977,
     length: '44m',
+    dialogMedia: 'https://www.youtube.com/embed/gfU1iZnjRZM?si=9vF9aafJ3kFoA1NE',
+    dialogMediaType: 'iframe',
   },
   {
     image: '/images/learning/courses/3.jpg',
@@ -67,6 +71,8 @@ export const courses = [
     category: 'Cooking',
     numStudents: 5484,
     length: '2h 41m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/4.jpg',
@@ -75,6 +81,8 @@ export const courses = [
     category: 'Development',
     numStudents: 4451,
     length: '27m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/5.jpg',
@@ -83,6 +91,8 @@ export const courses = [
     category: 'Music',
     numStudents: 5367,
     length: '55m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/6.jpg',
@@ -91,6 +101,8 @@ export const courses = [
     category: 'Cooking',
     numStudents: 15936,
     length: '51m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/7.jpg',
@@ -99,6 +111,8 @@ export const courses = [
     category: 'Development',
     numStudents: 9519,
     length: '1h 49m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/8.jpg',
@@ -107,6 +121,8 @@ export const courses = [
     category: 'Music',
     numStudents: 6865,
     length: '28m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/9.jpg',
@@ -115,6 +131,8 @@ export const courses = [
     category: 'Cooking',
     numStudents: 2748,
     length: '36m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/10.jpg',
@@ -123,6 +141,8 @@ export const courses = [
     category: 'Development',
     numStudents: 9254,
     length: '1h 34m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/11.jpg',
@@ -131,6 +151,8 @@ export const courses = [
     category: 'Music',
     numStudents: 1937,
     length: '55m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
   {
     image: '/images/learning/courses/12.jpg',
@@ -139,6 +161,8 @@ export const courses = [
     category: 'Cooking',
     numStudents: 7518,
     length: '1h 07m',
+    dialogMedia: '/videos/learning/1.mp4',
+    dialogMediaType: 'mp4',
   },
 ];
 
