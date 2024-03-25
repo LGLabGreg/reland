@@ -5,6 +5,7 @@ import { Section } from '@/components/ui/section';
 import { Heading } from '@/components/ui/heading';
 import { Paragraph } from '@/components/ui/paragraph';
 import Testimonial from '@/components/testimonial';
+import AnimateInView from '@/components/animate-in-view';
 
 import {
   Carousel,
@@ -20,15 +21,21 @@ const Courses = () => {
   return (
     <Section id="testimonials">
       <Container>
-        <div className="w-2/3 mx-auto flex flex-col justify-center items-center text-center mb-6">
+        <AnimateInView
+          className="w-2/3 mx-auto flex flex-col justify-center items-center text-center mb-6 opacity-0 -translate-y-8"
+          inViewClassName="opacity-1 translate-y-0"
+        >
           <div className="text-primary mb-1 uppercase font-semibold">Testimonials</div>
           <Heading level="h2">Why student love our platform</Heading>
           <Paragraph variant="lg" className="text-neutral-800/80">
             Whether you're looking to enhance your professional skills, explore a new hobby, or
             delve into academic subjects, our extensive course catalog has something for everyone.
           </Paragraph>
-        </div>
-        <div>
+        </AnimateInView>
+        <AnimateInView
+          className="opacity-0 translate-y-8"
+          inViewClassName="opacity-1 translate-y-0"
+        >
           <Carousel
             opts={{
               align: 'start',
@@ -48,7 +55,7 @@ const Courses = () => {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-        </div>
+        </AnimateInView>
       </Container>
     </Section>
   );

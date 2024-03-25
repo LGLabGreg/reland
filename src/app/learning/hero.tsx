@@ -10,11 +10,16 @@ import { Button } from '@/components/ui/button';
 import TypeAnimation from '@/components/ui/type-animation';
 import { Section } from '@/components/ui/section';
 
+import AnimateInView from '@/components/animate-in-view';
+
 const Hero = () => {
   return (
     <Section id="home" size="hero">
       <Container className="md:flex">
-        <div className="md:w-3/5 flex flex-col justify-center mb-10 md:mb-0">
+        <AnimateInView
+          className="md:w-3/5 flex flex-col justify-center mb-10 md:mb-0 opacity-0 -translate-x-8"
+          inViewClassName="opacity-1 translate-x-0"
+        >
           <Heading level="h1">
             Learn{' '}
             <TypeAnimation
@@ -40,8 +45,11 @@ const Hero = () => {
               <Link href="#become-mentor">become a mentor</Link>
             </Button>
           </div>
-        </div>
-        <div className="relative md:w-2/5 flex flex-col justify-center items-center px-5 py-5">
+        </AnimateInView>
+        <AnimateInView
+          className="relative md:w-2/5 flex flex-col justify-center items-center px-5 py-5 opacity-0 translate-x-8"
+          inViewClassName="opacity-1 translate-x-0"
+        >
           <ScrollParallax isAbsolutelyPositioned>
             <img
               src="/images/learning/hero-teacher.png"
@@ -65,7 +73,7 @@ const Hero = () => {
           </ScrollParallax>
 
           <img src="images/learning/hero.png" alt="hero" />
-        </div>
+        </AnimateInView>
       </Container>
     </Section>
   );

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+
 import { type NavigationProps } from './types';
 
 const useSectionObserver = (navigation: NavigationProps[]): string | null => {
