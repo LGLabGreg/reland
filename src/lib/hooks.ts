@@ -13,7 +13,7 @@ const useSectionObserver = (navigation: NavigationProps[]): string | null => {
           setActiveSectionId(`#${entries[0].target.id}`);
         }
       },
-      { threshold: 1, rootMargin: '90px' }
+      { threshold: 0.5 }
     );
 
     navigation.forEach(({ href }) => {

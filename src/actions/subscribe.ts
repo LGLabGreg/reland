@@ -13,7 +13,6 @@ type SubscribeResponse = {
 };
 
 export async function subscribe(email: string): Promise<SubscribeResponse> {
-  console.log('subscribe', email);
   try {
     newsletterEmailSchema.parse({ email });
     await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID!, {

@@ -45,7 +45,7 @@ const Course = ({
           <div className="cursor-pointer flex flex-col flex-1" onClick={() => setDialogOpen(true)}>
             <div
               style={{ backgroundImage: `url(${image})` }}
-              className="relative overflow-hidden bg-cover bg-center h-[164px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:bg-inherit before:bg-cover before:origin-center before:transition-transform group-hover:before:scale-110 pseudo-image-hover"
+              className="relative overflow-hidden bg-cover bg-center h-[164px] before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:bg-inherit before:bg-cover before:origin-center before:bg-center before:transition-transform group-hover:before:scale-110 pseudo-image-hover"
               key={title}
             ></div>
 

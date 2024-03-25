@@ -10,7 +10,7 @@ const navbarVariants = cva('flex justify-between items-center', {
       default: '',
     },
     size: {
-      default: 'h-mainnav',
+      default: '',
     },
   },
   defaultVariants: {

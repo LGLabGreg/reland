@@ -31,6 +31,7 @@ const config: Config = {
       },
       height: {
         mainnav: '90px',
+        mainnavsmall: '70px',
       },
       spacing: {
         mainnav: '90px',
