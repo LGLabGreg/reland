@@ -11,14 +11,12 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import Video from '@/components/ui/video';
 
 import { formatNumber } from '@/lib/utils';
 import { type CourseProps } from '@/lib/types';
-import Iframe from './ui/iframe';
 
 const Course = ({
-  course: { image, instructor, title, numStudents, length, category, dialogMedia, dialogMediaType },
+  course: { image, instructor, title, numStudents, length, category, dialogMedia },
   filter,
 }: {
   course: CourseProps;
