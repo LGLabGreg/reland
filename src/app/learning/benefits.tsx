@@ -6,6 +6,7 @@ import { Section } from '@/components/ui/section';
 import { Paragraph } from '@/components/ui/paragraph';
 
 import { Heading } from '@/components/ui/heading';
+import AnimateInView from '@/components/animate-in-view';
 
 import { benefits } from './config';
 
@@ -19,7 +20,10 @@ const Benefits = () => {
   return (
     <Section id="benefits" colour="grey">
       <Container className="md:flex">
-        <div className="md:w-2/5 flex flex-col justify-center mb-8 md:mb-0 ">
+        <AnimateInView
+          className="md:w-2/5 flex flex-col justify-center mb-8 md:mb-0 opacity-0 -translate-x-8"
+          inViewClassName="opacity-1 translate-x-0"
+        >
           <div className="text-primary mb-1 uppercase font-semibold">Benefits</div>
           <Heading level="h2">What you get learning with us</Heading>
           <Paragraph variant="lg" className="text-neutral-800/80">
@@ -29,9 +33,12 @@ const Benefits = () => {
           <Button className="self-start" asChild>
             <Link href="#">Explore Courses</Link>
           </Button>
-        </div>
+        </AnimateInView>
 
-        <div className="md:w-3/5 grid sm:grid-cols-2 gap-5 md:pl-16">
+        <AnimateInView
+          className="md:w-3/5 grid sm:grid-cols-2 gap-5 md:pl-16 opacity-0 translate-x-8"
+          inViewClassName="opacity-1 translate-x-0"
+        >
           {benefits.map(({ icon: Icon, title, description }: BenefitsProps) => (
             <div
               className="group border shadow rounded px-6 py-6 hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -50,7 +57,7 @@ const Benefits = () => {
               <Paragraph className="mb-0">{description}</Paragraph>
             </div>
           ))}
-        </div>
+        </AnimateInView>
       </Container>
     </Section>
   );
