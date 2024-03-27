@@ -1,8 +1,12 @@
-## Work in Progress!
-
 This is a landing page template built using Next.js/Typescript/Tailwind with Framer Motion animations.
 
-Currently building a E-learning demo http://localhost:3000/learning
+## Mailchimp
+
+```bash
+cp .env.example .env.local
+```
+
+Update Mailchimp secrets
 
 ## Getting Started
 
